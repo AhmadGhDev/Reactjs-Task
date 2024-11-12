@@ -1,0 +1,31 @@
+.search-bullets {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  overflow-x: auto;
+  background-color: #f0f0f0;
+}
+.search-bullets::-webkit-scrollbar {
+  display: none;
+}
+
+.search-bullets div {
+  min-width: 150px;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 7px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--main-color--);
+  border: 1px solid var(--main-color--);
+  cursor: pointer;
+}
+.search-bullets div.active,
+.search-bullets div:active {
+  background-color: var(--main-color--);
+  color: #fff;
+}

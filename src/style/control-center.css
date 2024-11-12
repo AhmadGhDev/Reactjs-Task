@@ -1,0 +1,49 @@
+.control-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color--);
+  width: 95%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 2.5%;
+  border-radius: 5px;
+}
+
+.control-center svg {
+  color: #fff;
+  font-size: 27px;
+}
+.control-center svg.active {
+  border-bottom: 2px solid #fff;
+}
+.control-center .home {
+  position: relative;
+}
+.control-center .home .number {
+  position: absolute;
+  font-size: 9.5px;
+  top: 9px;
+  left: 5.5px;
+  z-index: 9999;
+  color: var(--main-color--);
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .control-center {
+    height: 55px;
+  }
+  .control-center svg {
+    color: #fff;
+    font-size: 35px;
+  }
+  .control-center .home .number {
+    position: absolute;
+    font-size: 12px;
+    top: 15px;
+    left: 7.5px;
+    z-index: 9999;
+    color: var(--main-color--);
+  }
+}

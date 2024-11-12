@@ -1,0 +1,113 @@
+.items-list {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 70px;
+  max-height: calc(100dvh - 180px);
+  overflow: scroll;
+}
+
+.items-list .search-box {
+  background-color: #fff !important;
+}
+
+.items-list .item {
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 3px 3px 15px -11px;
+}
+.items-list .item .item-img {
+  width: 40%;
+  object-fit: cover;
+}
+.items-list .item .item-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 0;
+}
+.items-list .item .item-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  padding: 25px;
+  padding-right: 10px;
+}
+.items-list .item .item-det .item-title {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.items-list .item .item-det .item-des {
+  font-size: 11px;
+}
+.items-list .item .item-det .item-add-cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-right: 5px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--main-color--);
+}
+.items-list .item .item-det .item-add-cart button {
+  background-color: var(--main-color--);
+  padding: 5px 10px;
+  border: none;
+  border-radius: var(--border-radius--);
+  color: #fff;
+  font-size: 10px;
+}
+.items-list .item::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(201, 201, 201, 1) 49%,
+    rgba(243, 242, 242, 1) 90%,
+    rgba(251, 250, 250, 1) 100%
+  );
+  left: -5px;
+  z-index: -1;
+  height: 90%;
+  width: 50px;
+}
+.items-list .item::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(243, 242, 242, 1) 7%,
+    rgba(251, 250, 250, 1) 12%,
+    rgba(201, 201, 201, 1) 81%
+  );
+
+  right: -5px;
+  z-index: -1;
+  height: 90%;
+  width: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .items-list .item {
+    height: 240px;
+  }
+  .items-list .item .item-det .item-title {
+    font-size: 20px;
+  }
+  .items-list .item .item-det .item-des {
+    font-size: 15px;
+  }
+  .items-list .item .item-det .item-add-cart {
+    font-size: 15px;
+  }
+  .items-list .item .item-det .item-add-cart button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}

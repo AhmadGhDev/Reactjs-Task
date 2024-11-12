@@ -1,0 +1,42 @@
+@import url(./header.css);
+@import url(./search-box.css);
+@import url(./categories.css);
+@import url(./control-center.css);
+@import url(./search-bullets.css);
+@import url(./items-list.css);
+@import url(./cart-tracker.css);
+@import url(./item-popup.css);
+@import url(./loading-page.css);
+
+:root {
+  --main-color--: #00628e;
+  --border-radius--: 5px;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.Toastify__toast-container,
+.Toastify__toast-container--top-center {
+  z-index: 9999999999999999999999999999999999999999;
+  padding: 20px;
+}
